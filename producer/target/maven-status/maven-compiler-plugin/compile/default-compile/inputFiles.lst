@@ -1,0 +1,10 @@
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/ProducerApplication.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/config/RefinitivProperties.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/control/RefinitivLifecycle.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/ema/EmaConnectionStatus.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/ema/EmaConsumerFactory.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/ema/EmaFactoryConfiguration.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/ema/RefinitivQuoteClient.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/health/RefinitivHealthIndicator.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/kafka/QuotePublisher.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/producer/src/main/java/com/example/fx/producer/web/RefinitivControlController.java

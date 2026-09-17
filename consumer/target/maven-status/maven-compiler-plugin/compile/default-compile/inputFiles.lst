@@ -1,0 +1,8 @@
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/ConsumerApplication.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/config/ConsumerControlProperties.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/control/KafkaConsumerLifecycle.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/health/KafkaConsumerHealthIndicator.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/kafka/FxQuoteListener.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/persistence/FxQuoteEntity.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/persistence/FxQuoteRepository.java
+/Users/ali/Documents/Projects/chatgpt/fx-pipeline-reference/consumer/src/main/java/com/example/fx/consumer/web/KafkaConsumerControlController.java

@@ -1,0 +1,8 @@
+com/example/fx/consumer/ConsumerApplication.class
+com/example/fx/consumer/kafka/FxQuoteListener.class
+com/example/fx/consumer/web/KafkaConsumerControlController.class
+com/example/fx/consumer/control/KafkaConsumerLifecycle.class
+com/example/fx/consumer/config/ConsumerControlProperties.class
+com/example/fx/consumer/persistence/FxQuoteRepository.class
+com/example/fx/consumer/persistence/FxQuoteEntity.class
+com/example/fx/consumer/health/KafkaConsumerHealthIndicator.class

@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: fx-refinitiv-producer
+  lifecycle:
+    timeout-per-shutdown-phase: 60s
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+    producer:
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        enable.idempotence: true
+
+app:
+  refinitiv:
+    # Inject this value from the zone's Vault path at pod startup.
+    auto-start: ${REFINITIV_AUTO_START:false}
+    host: ${REFINITIV_HOST}
+    port: ${REFINITIV_PORT:14002}
+    username: ${REFINITIV_USERNAME}
+    password: ${REFINITIV_PASSWORD:}
+    service-name: ${REFINITIV_SERVICE_NAME}
+    instruments: ${REFINITIV_INSTRUMENTS}
+    zone: ${ZONE_NAME}
+    kafka-topic: ${FX_QUOTES_TOPIC:fx-quotes}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+server:
+  shutdown: graceful

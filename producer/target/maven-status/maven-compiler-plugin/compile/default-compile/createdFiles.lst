@@ -1,0 +1,12 @@
+com/example/fx/producer/health/RefinitivHealthIndicator.class
+com/example/fx/producer/ema/RefinitivQuoteClient.class
+com/example/fx/producer/ema/EmaConsumerFactory.class
+com/example/fx/producer/ema/EmaConnectionStatus.class
+com/example/fx/producer/ema/EmaConnectionStatus$State.class
+com/example/fx/producer/config/RefinitivProperties.class
+com/example/fx/producer/web/RefinitivControlController.class
+com/example/fx/producer/kafka/QuotePublisher.class
+com/example/fx/producer/control/RefinitivLifecycle.class
+com/example/fx/producer/ema/EmaFactoryConfiguration.class
+com/example/fx/producer/health/RefinitivHealthIndicator$1.class
+com/example/fx/producer/ProducerApplication.class

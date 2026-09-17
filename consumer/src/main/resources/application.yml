@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: fx-database-consumer
+  lifecycle:
+    timeout-per-shutdown-phase: 60s
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+    consumer:
+      group-id: ${KAFKA_CONSUMER_GROUP:fx-database-consumer}
+      client-id: ${ZONE_NAME}-fx-database-consumer
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.example.fx.common
+    listener:
+      ack-mode: record
+
+app:
+  kafka:
+    topic: ${FX_QUOTES_TOPIC:fx-quotes}
+  consumer:
+    # Inject this value from the zone's Vault path at pod startup.
+    auto-start: ${KAFKA_CONSUMER_AUTO_START:false}
+    listener-id: fxFeedConsumer
+    zone: ${ZONE_NAME}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+server:
+  shutdown: graceful
